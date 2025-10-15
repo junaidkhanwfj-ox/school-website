@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="errorMessage" style="color:red;"></p>
+
+</body>
+</html>
+
+<script>
+    function validateForm() {
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+  let errorMessage = document.getElementById("errorMessage");
+
+  // Clear old error messages
+  errorMessage.innerHTML = "";
+
+  // Check name
+  if (name === "") {
+    errorMessage.innerHTML = "Name is required";
+    return false; // stop form submission
+  }
+
+  // Check email format
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    errorMessage.innerHTML = "Please enter a valid email";
+    return false;
+  }
+
+  // Check password length
+  if (password.length < 6) {
+    errorMessage.innerHTML = "Password must be at least 6 characters";
+    return false;
+  }
+
+  // If everything is correct
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>

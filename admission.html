@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar</title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color:whitesmoke ;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: hotpink;
+                color: lightpink;
+                text-align: center;
+                padding: 15px;
+            }
+            .nav{
+                 display: flex;
+              justify-content: flex-end;
+                background-color: cornflowerblue;
+                overflow: hidden;
+            }
+            .nav a{
+                
+                color: cornsilk;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+                text-decoration: none;
+            }
+            .nav a:hover{
+                background-color: aqua;
+                color:darkgray;text-decoration: underline;
+            }
+            .nav a.active{
+                background-color: rgb(179, 24, 75);
+                color: lavender;
+            }
+            .container{
+                max-width: 700px;
+                margin: 20px auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 6px;
+            }
+            h2{
+                text-align: center;
+                color:firebrick;
+                margin-top: 0;
+            }
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            form div{
+                flex:1 1 45%;
+                display: flex;
+                flex-direction: column;
+            }
+            .full-width{
+                flex: 1 1 100%;
+            }
+            label{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input,select,textarea,button{
+                padding: 8px;
+                border: 1px solid black;
+                border-radius: 4px;
+            }
+            button{
+                background:#007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover{
+                background: #0056b3;
+            }
+            .declartion{
+                flex-direction: row;
+                align-items: center;
+            }
+            .declartion label{
+                font-weight: normal;
+                margin-left: 8px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="academics.html">Academics</a>
+            <a class="active" href="admission.html">Admission</a>
+            <a href="images.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="container">
+            <h2>Application Form</h2>
+            <form>
+                <div>
+                    <label>First Name</label><input type="text" requried/>
+                </div>
+                <div>
+                    <label>Last Name</label><input type="text" requried/>
+                </div>
+                <div>
+                    <label>Date of Birth</label><input type="date" requried/>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <select requried>
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="full-width">
+                    <label>Address</label><textarea rows="3" requried></textarea>
+                </div>
+                <div>
+                    <label>Phone</label><input type="tel" requried>
+                </div>
+                <div>
+                    <label>Email</label><input type="Email" requried/>
+                </div>
+                <div class="full-width">
+                    <label>Class / Course Applying For</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Parent / Guardian Name</label><input type="text" requried/>
+                </div>
+                <div>
+                    <label>Parent / Guardian Phone</label>
+                    <input type="tel" requried/>
+                </div>
+                <div class="full-width">
+                    <label>Upload Photo(passport size)</label><input type="file" requried/>
+                </div>
+                <div class="full-width">
+                    <label>Upload Previous Marks Card / ID</label><input type="file"/>
+                </div>
+                <div class="full-width">
+                    <label>Additional Information</label><textarea rows="3"></textarea>
+                </div>
+                <div class="full-width declartion">
+                    <input type="checkbox" required /><label>I Confirm that all the information provided is correct.</label>
+                </div>
+                <div class="full-width">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+       <footer style="background-color:ghostwhite;
+color:black;
+padding: 40px 0;
+font-family: 'Times New Roman', Times, serif;">
+    <div style="display: flex;justify-content: space-between;max-width: 1700px;margin: auto;flex-wrap: wrap;">
+        <!-- First section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s" alt="logo">
+            <p style="font-size: 17px;">Malnad institute of skill development and training center</p>
+        </div>
+        <!-- second section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Quick links</h3>
+            <p><a href="index.html">Home</a></p>
+             <p><a href="about.html">About</a></p>
+              <p><a href="academics.html">Academics</a></p>
+               <p><a href="contact.html">Contact</a></p>
+        </div>
+        <!-- third section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Contact info</h3>
+            <p>Email:junaidkhan240k@gmail.com</p>
+            <p>ph no:8867712833</p>
+           <p>address:Ilyaz nagar shimoga</p>
+        </div>
+        <!-- fourth section -->
+         <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Follow us</h3>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://in.linkedin.com/">Linkdin</a></p>
+            <p><a href="https://x.com/?lang=en-in">Twitter</a></p>
+         </div>
+    </div>
+    <p style="text-align: center;margin-top: 20px;border-top: 1px solid slategray;padding-top: 10px;font-size: 14px;">
+        &copy 2025 Your Company.All Rights Reserved.
+    </p>
+</footer>
+    </body>
+</html>

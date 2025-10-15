@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar</title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s">
+        <style>
+            .nav{
+                 display: flex;
+              justify-content: flex-end;
+                background-color: cornflowerblue;
+                overflow: hidden;
+            }
+            .nav a{
+                
+                color: cornsilk;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+                text-decoration: none;
+            }
+            .nav a:hover{
+                background-color: aqua;
+                color:darkgray;text-decoration: underline;
+            }
+            .nav a.active{
+                background-color: rgb(179, 24, 75);
+                color: lavender;
+            }
+            .wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 900px;
+                margin:auto;
+                gap:20px;
+                justify-content: center;
+            }
+            .box{
+                flex: 1;
+                background-color: #fff;
+                padding:25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+            .box:hover{
+                transform: translateY(-3px);
+                box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+            }
+            h2{
+                margin-top: 0;
+                margin-bottom: 15px;
+                text-align: center;
+                color: #007bff;
+            }
+            label{
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            input, textarea, button{
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+            button{
+                background: #007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                margin-top: 15px;
+                transition:background 0.2s ease;
+            }
+            button:hover{
+                background: #0056b3;
+            }
+            p{
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="academics.html">Academics</a>
+            <a href="admission.html">Admission</a>
+            <a href="images.html">Gallery</a>
+            <a class="active"  href="contact.html">Contact</a>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong>India,Karnataka,Shimoga</p>
+                <p><strong>Phone:</strong>+91 8867712833</p>
+                <p><strong>Email:</strong>junaidkhan240k@gmail.com</p>
+                <p><strong>Open:</strong>Daily 09:00 AM - 06:00 PM</p>
+            </div>
+            <div class="box">
+                <h2>Send a Message</h2>
+                <form action="#" method="post">
+                    <label>Name</label>
+                    <input type="text" name="name"requried/>
+                    <label>Email</label>
+                    <input type="email" name="email"requried/>
+                    <label>Message</label>
+                    <textarea name="message" rows="4" requried></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.640252527805!2d75.56631977586682!3d13.920438493365289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbba980309ec6e3%3A0x3c7588ef72281c3!2sMalnad%20Institute%20of%20Skill%20Development%20and%20Technical%20Center!5e0!3m2!1sen!2sin!4v1756895474689!5m2!1sen!2sin" width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+        <footer style="background-color:ghostwhite;
+color:black;
+padding: 40px 0;
+font-family: 'Times New Roman', Times, serif;">
+    <div style="display: flex;justify-content: space-between;max-width: 1700px;margin: auto;flex-wrap: wrap;">
+        <!-- First section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s" alt="logo">
+            <p style="font-size: 17px;">Malnad institute of skill development and training center</p>
+        </div>
+        <!-- second section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Quick links</h3>
+            <p><a href="index.html">Home</a></p>
+             <p><a href="about.html">About</a></p>
+              <p><a href="academics.html">Academics</a></p>
+               <p><a href="contact.html">Contact</a></p>
+        </div>
+        <!-- third section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Contact info</h3>
+            <p>Email:junaidkhan240k@gmail.com</p>
+            <p>ph no:8867712833</p>
+          <p>address:Ilyaz nagar shimoga</p>
+        </div>
+        <!-- fourth section -->
+         <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Follow us</h3>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://in.linkedin.com/">Linkdin</a></p>
+            <p><a href="https://x.com/?lang=en-in">Twitter</a></p>
+         </div>
+    </div>
+    <p style="text-align: center;margin-top: 20px;border-top: 1px solid slategray;padding-top: 10px;font-size: 14px;">
+        &copy 2025 Your Company.All Rights Reserved.
+    </p>
+</footer>
+    </body>
+</html>

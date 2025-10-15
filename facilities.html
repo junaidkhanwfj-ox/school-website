@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar</title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s">
+        <style>
+            .nav{
+                 display: flex;
+              justify-content: flex-end;
+                background-color: cornflowerblue;
+                overflow: hidden;
+            }
+            .nav a{
+                
+                color: cornsilk;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+            }
+            .nav a:hover{
+                background-color: aqua;
+                color:darkgray;
+            }
+            .nav a.active{
+                background-color: rgb(179, 24, 75);
+                color: lavender;
+            }
+             .card{
+                border: 2px solid #ccc;
+                border-radius: 10px;
+                padding:20px;
+                max-width: 1600px;
+
+                margin: 30px;
+                display: flex;
+                align-items: center;
+                background-color:black;
+            }
+            .card img{
+                width: 30%;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+            .card-content{
+                flex: 1;
+                font-family: Arial, sans-serif;
+                color:whitesmoke;
+            }
+            .card-content h2{
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a  href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="facilities.html">Facilities</a>
+            <a href="academics.html">Academics</a>
+            <a href="admission.html">Admission</a>
+            <a href="images.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+       
+        <div class="card">
+           
+
+             <!-- Text content -->
+              <div class="card-content">
+                <h2>TRANSPORTATION</h2>
+                <p>
+                   Our school provides a comprehensive transportation facility ensuring safe and convenient travel for students. Equipped with GPS tracking, our buses are managed by experienced drivers and attendants to guarantee punctuality and security. Routes are designed to cover extensive areas, ensuring that all students have easy access to school transportation. Regular maintenance and safety checks are conducted to ensure the highest standards of reliability and comfort.
+                </p>
+                
+                </div>
+               <!-- IMAGE -->
+             <img src="https://5.imimg.com/data5/FP/DN/ER/GLADMIN-106442/ashok-leyland-lynx-smart-4900-non-ac-school-bus.png" alt="Example">
+        </div>
+         <div class="card">
+           <img src="data:image/jpeg;base64,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" alt="Example">
+        
+
+             <!-- Text content -->
+              <div class="card-content">
+                <h2>COMPUTER LAB</h2>
+                <p>
+                  Our school's computer lab stands as a beacon of opportunity, empowering students with essential digital skills and fostering innovation. Equipped with state-of-the-art technology and software, it serves as a dynamic space where students can engage in interactive learning experiences, collaborate on projects, and explore their creativity. From honing digital literacy to delving into multimedia creation, the computer lab provides a supportive environment for students to excel academically and develop the skills they need to thrive in the modern world.</p>
+                
+                </div>
+               <!-- IMAGE -->
+             </div>
+         <div class="card">
+           
+
+             <!-- Text content -->
+              <div class="card-content">
+                <h2>LIBRARY</h2>
+                <p>
+                   The library in our school stands as a treasure trove of knowledge, boasting an extensive collection of the best books across various genres and subjects. From timeless classics to contemporary literature, our library caters to diverse interests and academic pursuits, ensuring that every student can find something captivating to read. With cozy reading nooks, comfortable seating, and a tranquil atmosphere, the library provides the perfect environment for students to immerse themselves in the world of books and expand their horizons.
+
+
+                </p>
+                
+                </div>
+               <!-- IMAGE -->
+             <img src="https://gardenhighschool.in/wp-content/uploads/2016/04/Library-2-1.jpg" alt="Example">
+        </div>
+         <div class="card">
+           <img src="https://www.stpatricksmananthavady.com/wp-content/uploads/2018/09/Smart-Class.jpg" alt="Example">
+
+             <!-- Text content -->
+              <div class="card-content">
+                <h2>SMART CLASSROOMS</h2>
+                <p>
+                   KKEC SCHOOL has Spacious class rooms with all equipment. Incorporating smart classrooms into our school environment revolutionizes the learning experience, seamlessly integrating technology to enhance teaching and student engagement. Equipped with interactive whiteboards, audio-visual aids, and digital resources, these classrooms transform traditional lessons into dynamic, interactive sessions. Teachers can utilize multimedia presentations, online resources, and educational apps to cater to diverse learning styles and captivate students' attention.
+                </p>
+                
+                </div>
+               <!-- IMAGE -->
+             
+        </div>
+         <div class="card">
+           
+
+             <!-- Text content -->
+              <div class="card-content">
+                <h2>PLAYING AREA</h2>
+                <p>
+                   The very idea of including play, in required ratio with the academics, fulfills the prime objective of enriching students with creativity and thinking skills. To accomplish this, we at KKEC SCHOOL allow students to explore different environments by providing them with indoor and outdoor sports arena.
+                </p>
+                
+                </div>
+               <!-- IMAGE -->
+             <img src="https://www.learningspacesolutions.com/wp-content/uploads/2024/06/why-do-schools-need-playgrounds.jpg" alt="Example">
+        </div>
+         <div class="card">
+           <img src="https://www.srilakshmipublicschool.com/uploads/page_contents/5d5e230c16586d5855368e1a0e0ebaf9.webp" alt="Example">
+
+             <!-- Text content -->
+              <div class="card-content">
+                
+                <h2>KARATE CLASS</h2>
+                <p>
+                    Offering karate classes at our school provides students with a unique opportunity to develop physical fitness, discipline, and self-confidence. Through structured training sessions led by experienced instructors, students learn essential martial arts techniques, including punches, kicks, and blocks, while also mastering important principles such as respect, perseverance, and self-control. Karate classes not only promote physical strength and agility but also cultivate mental resilience and emotional well-being, empowering students to face challenges with confidence and determination.
+                </p>
+
+                
+                </div>
+               <!-- IMAGE -->
+             
+        </div>
+       <footer style="background-color:ghostwhite;
+color:black;
+padding: 40px 0;
+font-family: 'Times New Roman', Times, serif;">
+    <div style="display: flex;justify-content: space-between;max-width: 1700px;margin: auto;flex-wrap: wrap;">
+        <!-- First section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC2TsupP-aEOKYyRv52D1p9RA0wZnl1If5kg&s" alt="logo">
+            <p style="font-size: 17px;">Malnad institute of skill development and training center</p>
+        </div>
+        <!-- second section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Quick links</h3>
+            <p><a href="index.html">Home</a></p>
+             <p><a href="about.html">About</a></p>
+              <p><a href="academics.html">Academics</a></p>
+               <p><a href="contact.html">Contact</a></p>
+        </div>
+        <!-- third section -->
+        <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Contact info</h3>
+            <p>Email:junaidkhan240k@gmail.com</p>
+            <p>ph no:8867712833</p>
+           <p>address:Ilyaz nagar shimoga</p>
+        </div>
+        <!-- fourth section -->
+         <div style="flex:1;min-width: 200px;padding: 15px;">
+            <h3>Follow us</h3>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://in.linkedin.com/">Linkdin</a></p>
+            <p><a href="https://x.com/?lang=en-in">Twitter</a></p>
+         </div>
+    </div>
+    <p style="text-align: center;margin-top: 20px;border-top: 1px solid slategray;padding-top: 10px;font-size: 14px;">
+        &copy 2025 Your Company.All Rights Reserved.
+    </p>
+</footer>
+    </body>
+</html>
